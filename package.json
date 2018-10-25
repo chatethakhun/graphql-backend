@@ -1,0 +1,29 @@
+{
+  "name": "graphql-backend",
+  "version": "1.0.0",
+  "description": "graphql backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node --presets env,stage-2 app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chatethakhun",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2018": "^1.0.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "express": "^4.16.4",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-plugin-import-glob": "^2.0.0",
+    "babel-plugin-inline-import": "^3.0.0",
+    "chalk": "^2.4.1"
+  }
+}

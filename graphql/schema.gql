@@ -1,0 +1,8 @@
+type Query {
+  cars: [Car]
+}
+
+type Mutation {
+  addCar(name: String!): [Car]
+  removeCar(id: Int): [Car]
+}

@@ -1,0 +1,14 @@
+{
+  "env": {},
+  "ignore": [],
+  "plugins": [
+    ["import-glob"],
+    [
+      "babel-plugin-inline-import",
+      {
+        "extensions": [".gql", ".graphql"]
+      }
+    ]
+  ],
+  "presets": []
+}
