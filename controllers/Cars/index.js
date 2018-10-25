@@ -1,4 +1,4 @@
-const cars = [
+let cars = [
   {
     id: 1,
     name: "Honda"
@@ -28,6 +28,10 @@ export const addCar = (args, { name }) => {
 };
 
 export const removeCar = (args, { id }) => {
-  const filterCar = cars.filter(car => car.id !== id);
-  return filterCar;
+  if (cars.find(car => car.id === id)) {
+    cars = cars.filter(car => car.id !== id);
+    return cars.filter(car => car.id !== id);
+  } else {
+    return Promise.reject("id not found");
+  }
 };
